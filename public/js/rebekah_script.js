@@ -1,4 +1,8 @@
 $("document").ready(function() {
+	$(window).load(function(){
+	  $('#loader').fadeOut(2000);
+	});
+
 	$(".player").hide();
 	$(".header").hide();
 	$(".album_header").hide();
