@@ -1,5 +1,4 @@
 $("document").ready(function() {
-	alert("failsafe");
 	$(".player").hide();
 	$(".header").hide();
 	$(".album_header").hide();
@@ -8,10 +7,6 @@ $("document").ready(function() {
 	$(".album_header").fadeTo(500, 1.0);
 	$(".slider").hide();
 	$("#about_rebekah_fixed").hide();
-
-	$("body").click(function() {
-			alert($(window).scrollTop());
-		});
 
 	$(".listen").click(function() {
 		event.preventDefault();
