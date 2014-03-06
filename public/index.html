@@ -24,6 +24,18 @@
 				src: url(Raleway-thin.otf);
 			}
 
+			#loader {
+				height: 100%;
+				width: 100%;
+				overflow: hidden;
+				background-color: black;
+				position: fixed;
+				z-index: 1000;
+			}
+			#loader {
+				margin: auto;
+			}
+
 			body {
 				font-family: raleway-light;
 			}
@@ -256,9 +268,19 @@
 			}
 		</style>
 
+		<script>
+			$(window).load(function(){
+			  $('#loader').fadeOut(2000);
+			});
+		</script>
+
+
 	</head>
 
 	<body>
+		<div id="loader">
+			<img src="images/ajax-loader.gif">
+		</div>
 		<section id="home">
 			<div id="nav_contain">
 				<div class="nav_wrapper">
