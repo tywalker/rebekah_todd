@@ -62,9 +62,9 @@ $("document").ready(function() {
 				$(".roots_center").css({
 					height: imgHeight + "px"
 				}); // end css
-				$(".roots_side").css({
+				$(".roots_side").animate({
 					width: imgHeight + "px"
-				}); //end animate
+				}, 100); //end animate
 
 			}// end if statement
 			else if(yPos<8100) {
