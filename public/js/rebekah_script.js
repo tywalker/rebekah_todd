@@ -32,7 +32,7 @@ $("document").ready(function() {
 
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
-		var xPos = (scrollTop - 7300);
+		var xPos = (scrollTop - 7400);
 
 		if (scrollTop >= 1800 && scrollTop <= 6700) {
 			$("#about_rebekah_fixed").show();
