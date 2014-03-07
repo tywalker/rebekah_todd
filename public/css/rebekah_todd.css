@@ -65,14 +65,14 @@
 				position: fixed;
 				top: 42px;
 				opacity: 0.7;
-				z-index: 110;
+				z-index: 1000;
 			}
 			#nav_contain {
 				position: fixed;
 				background-color: rgba(51,51,51,0.7);
 				height: 42px;
 				width: 100%;
-				z-index: 100;
+				z-index: 1000;
 			}
 			.nav_wrapper{
 				text-align: center;
@@ -98,7 +98,7 @@
 				position: fixed;
 				top: 10px;
 				left: 30px;
-				z-index: 101;
+				z-index: 1001;
 			}
 			.listen a {
 				font-size: 1.5em;
@@ -175,7 +175,7 @@
 				font-size: 1.25em;
 			}
 			.purchase_div ul li:hover a {
-				color: white;
+				color: #990000;
 			}
 			.purchase_div ul li a img {
 				margin-left: 20px;
@@ -188,10 +188,10 @@
 			}
 
 			#about {
-				background: url(../images/rebecca_bg.png) no-repeat fixed;
+				background: url(../images/rebecca_bg.jpg) no-repeat fixed;
 				background-position: center;
 				background-size: cover;
-				height: 4000px; 
+				height: 5500px; 
 				z-index: 0;
 			}
 			#about h1 {
@@ -203,7 +203,7 @@
 				position: absolute;
 				top: 2300px;
 				left: 0;
-				height: 3700px;
+				height: 5200px;
 				width: 100%;
 				overflow: hidden;
 				background-color: #FFFFFF;
@@ -260,12 +260,12 @@
 
 			}
 			#contact h1 {
-				padding-top: 5%;
 				font-family: raleway-thin;
+				padding-top: 4%;
 			}
 			.contact_wrapper {
 				position: absolute;
-				top: 6200px;
+				top: 7700px;
 				height: 1050px; 
 				width: 100%;
 				background: #FFFFFF;
@@ -337,7 +337,7 @@
 			}
 			.roots_wrap {
 				position: absolute;
-				top: 6750px;
+				top: 8250px;
 				z-index: 110;
 				width: 100%;
 			}
