@@ -322,12 +322,6 @@
 				z-index: 93;
 				box-shadow: 0 0 50px rgba(0,0,0,1);
 			}
-			.tree {
-				margin: 0 auto;
-				padding-top: 80px;
-				border: 1px solid black;
-				width: 540px;
-			}
 			.roots_wrap {
 				position: absolute;
 				top: 8250px;
@@ -335,36 +329,13 @@
 				width: 100%;
 			}
 			.tree_wrap {
-				width: 600px;
-				height: 1070px;
+				position: absolute;
+				top: 790px;
+				width: 40%;
 			}
 			.the_tree {
-				position: absolute;
-				top: 90px;
-				left: 225px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
 				z-index: 200;
-			}
-			.roots_center_wrap {
-				position: absolute;
-				top: 465px;
-				left: 225px;
-				width: 600px;
-			}
-			.roots_center {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				z-index: 0;
-			}
-			.roots_side_wrap {
-				position: absolute;
-				top: 465px;
-				left: 225px;
-				width: 600px;
-			}
-			.roots_side {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				z-index: 0;
 			}
