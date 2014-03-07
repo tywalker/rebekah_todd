@@ -3,18 +3,12 @@ $("document").ready(function() {
 	$(window).load(function(){
 	  $('#loader').fadeOut(3000);
 	});
-	$("body").click(function() {
-		alert($(window).scrollTop());
-	});
 
-	$(".player, .slider").hide();
+	$(".player, .slider, #about_rebekah_fixed").hide();
 
-	$(".listen").click(function() {
+	$(".listen").click(function(event) {
 		event.preventDefault();
-		$(".player").toggle(100);
-	});
-	$("body").click(function() {
-		$(".player").fadeOut(100);
+		$(".player").toggle(200);
 	});
 
 	$(window).scroll(function() {
