@@ -35,7 +35,6 @@
 				margin-right: auto;
 				margin-top: 300px;
 			}
-
 			body {
 				font-family: raleway-light;
 			}
@@ -50,7 +49,6 @@
 				background-size: cover;
 				height: 1000px;
 			}
-
 			#home h1{
 				font-size: 7em;
 				padding-top: 100px;
@@ -186,12 +184,11 @@
 			.purchase_div ul li:hover img {
 				-webkit-transform: rotate(15deg);
 			}
-
 			#about {
 				background: url(../images/rebecca_bg.jpg) no-repeat fixed;
 				background-position: center;
 				background-size: cover;
-				height: 5500px; 
+				height: 6200px; 
 				z-index: 0;
 			}
 			#about h1 {
@@ -203,7 +200,7 @@
 				position: absolute;
 				top: 2300px;
 				left: 0;
-				height: 5200px;
+				height: 5900px;
 				width: 100%;
 				overflow: hidden;
 				background-color: #FFFFFF;
@@ -217,8 +214,8 @@
 				margin-right: auto;
 			}
 			.slider {
-				position: fixed;
-				top: 100px;
+				position: relative;
+				top: 150px;
 				width: 6000px;
 				height: 1000px;
 				z-index: 100;
@@ -226,8 +223,8 @@
 			.slider img {
 				display: block;
 				float: left;
-				height: 90%;
-				margin-right: 5%;
+				height: 98%;
+				margin-right: 3%;
 			}
 			#about_rebekah_fixed {
 				border-radius: 5px;
@@ -246,10 +243,8 @@
 			#about_rebekah_fixed p {
 				color: white;
 				padding-top: 25px;
-				font-size: 1em;
+				font-size: 1.25em;
 			}
-
-
 			#contact {
 				background: url(../images/album_bg_red.jpg) no-repeat fixed;
 				background-position: center;
@@ -257,7 +252,6 @@
 				height: 2500px; 
 				z-index: 93;
 				box-shadow: 0 0 50px rgba(0,0,0,1);
-
 			}
 			#contact h1 {
 				font-family: raleway-thin;
@@ -265,7 +259,7 @@
 			}
 			.contact_wrapper {
 				position: absolute;
-				top: 7700px;
+				top: 8400px;
 				height: 1050px; 
 				width: 100%;
 				background: #FFFFFF;
@@ -285,7 +279,6 @@
 			}
 			.contact_info h3 {
 				font-size: 2.5em;
-
 			}
 			.contact_info a {
 				font-size: 1.75em;
