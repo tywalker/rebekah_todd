@@ -3,40 +3,60 @@ $("document").ready(function() {
 	$(window).load(function(){
 	  $('#loader').fadeOut(3000);
 	});
+	$("body").click(function() {
+		alert($(window).scrollTop());
+	});
 
-	$(".player").hide();
-	$(".header").hide();
-	$(".album_header").hide();
-	$(".header").fadeIn(1000);
-	$(".album_header").fadeTo(1000, 0.0);
-	$(".album_header").fadeTo(500, 1.0);
-	$(".slider").hide();
-	$("#about_rebekah_fixed").hide();
+	$(".player, .slider").hide();
 
 	$(".listen").click(function() {
 		event.preventDefault();
-		$(".player").toggle(500);
+		$(".player").toggle(100);
 	});
 	$("body").click(function() {
-		$(".player").fadeOut(500);
+		$(".player").fadeOut(100);
 	});
 
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
-		var xPos = (scrollTop * 2) - 11450;
+		var xPos = (scrollTop * 2) - 10450;
 
-		if (scrollTop >= 2000 && scrollTop <= 6050) {
-			$(".slider").fadeIn(700);
-				$("#about_rebekah_fixed").fadeIn(700);
-			if (scrollTop<= 6020) {
+		if (scrollTop >= 1800 && scrollTop <= 5500) {
+			$("#about_rebekah_fixed").show();
+		}
+		else {
+			$("#about_rebekah_fixed").hide();
+		}
+
+		if (scrollTop >= 2000 && scrollTop <= 5050) {
+			$(".slider").show();
+			if (scrollTop<= 4850) {
 				$(".slider").css({
 					'right': xPos +'px'
 				});
 			}
 		}
 		else {
-			$("#about_rebekah_fixed").fadeOut(1000);
 			$(".slider").fadeOut(500);
 		}
 	});
+
+	$(window).scroll(function() {
+		var yPos = $(window).scrollTop(),
+		imgHeight = yPos - 6630;
+			if (yPos > 6630 && yPos < 7200) {
+				$(".roots_center, .roots_side").show();
+				$(".roots_center").css({
+					height: imgHeight + "px"
+				}); // end css
+				$(".roots_side").css({
+					width: imgHeight + "px"
+				}); //end animate
+
+			}// end if statement
+			else if(yPos<6630) {
+				$(".roots_center, .roots_side").hide()
+			}
+
+	}); // end scroll
 }); // end document ready
