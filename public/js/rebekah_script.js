@@ -5,6 +5,39 @@ $("document").ready(function() {
 		var imgPos;
 		var xPos;
 
+		$('body').click(function() {
+			alert($(window).scrollTop());
+		});
+
+		// set active nav function
+		$(function() {
+			$(window).scroll(function() {
+				scrollTop = $(window).scrollTop();
+				var removeClass = $(".active").removeClass("active");
+
+				if (scrollTop < 1000) {
+					removeClass;
+					$("#nav_contain ul li a:first").addClass("active");
+				}
+				else if (scrollTop >= 1000 && scrollTop < 2000) {
+					removeClass;
+					$("#nav_contain ul li a:eq(1)").addClass("active");
+				}
+				else if (scrollTop >= 2000 && scrollTop < 8200) {
+					removeClass;
+					$("#nav_contain ul li a:eq(2)").addClass("active");
+				}
+				else if (scrollTop >= 8200 && scrollTop < 9450) {
+					removeClass;
+					$("#nav_contain ul li a:eq(3)").addClass("active");
+				}
+				else {
+					removeClass;
+					$("#nav_contain ul li a:eq(4)").addClass("active");
+				}
+			});
+		});
+
 		// sets loading gif until images are loaded
 		$(window).load(function(){
 		  $('#loader').fadeOut(3000);
@@ -24,12 +57,12 @@ $("document").ready(function() {
 			$(window).resize(function() {
 				scrollTop = $(window).scrollTop();
 				imgPos = -(($(window).width()/2) - ($(".slider img:first").width()/2));
-				xPos = ((scrollTop - 7560) - imgPos);
+				xPos = ((scrollTop - 7555) - imgPos);
 
 				// centers first gallery img, consequently making sure gallery scrolls smoothly through
 				// the process of sizing and resizing
 				$(".slider").css({'position' : 'relative', 'right' : imgPos + 'px'});
-				
+
 				// adjusts gallery if gallery scroll has begun
 				if (scrollTop >= 2300) {
 					$(".slider").css({'position' : 'fixed'});
@@ -61,7 +94,7 @@ $("document").ready(function() {
 			$(window).scroll(function() {
 				scrollTop = $(window).scrollTop();
 				imgPos = -(($(window).width()/2) - ($(".slider img:first").width()/2));
-				xPos = ((scrollTop - 7560) - imgPos);
+				xPos = ((scrollTop - 7555) - imgPos);
 
 				// fades about info in and out, before and after #about div
 				if (scrollTop >= 2250 && scrollTop <= 6700) {
@@ -80,7 +113,7 @@ $("document").ready(function() {
 						'right': xPos +'px'
 					});
 				}
-				// sets gallery to relative so visible before scroll
+				// sets gallery to relative so it is visible before scroll
 				else if(scrollTop <= 2300) {
 					$(".slider").css({'position' : 'relative', 'right' : imgPos + 'px'});
 				}

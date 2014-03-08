@@ -91,7 +91,9 @@
 			#nav_contain li a:hover {
 				color: white;
 			}
-
+			#nav_contain li a.active {
+				color: white;
+			}
 			.listen {
 				position: fixed;
 				top: 10px;
