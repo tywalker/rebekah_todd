@@ -59,7 +59,7 @@
 				color: white;
 				font-family: raleway-thin;
 			}
-			.player {
+			#player {
 				position: fixed;
 				top: 42px;
 				opacity: 0.7;
@@ -72,7 +72,7 @@
 				width: 100%;
 				z-index: 1000;
 			}
-			.nav_wrapper{
+			#nav_wrapper{
 				text-align: center;
 				margin: 0 auto;
 				height: 50px;
@@ -94,19 +94,19 @@
 			#nav_contain li a.active {
 				color: white;
 			}
-			.listen {
+			#listen {
 				position: fixed;
 				top: 10px;
 				left: 30px;
 				z-index: 1001;
 			}
-			.listen a {
+			#listen a {
 				font-size: 1.5em;
 				font-family: raleway-light;
 				text-decoration: none;
 				color: #999999;
 			}
-			.listen a:hover{
+			#listen a:hover{
 				color: white;
 			}
 
@@ -121,11 +121,11 @@
 				height: 1000px;
 				box-shadow: 0 0 50px rgba(0,0,0,1);
 			}
-			.album_wrapper {
+			#album_wrapper {
 				margin: 0 auto;
 				padding-top: 50px;
 			}
-			.album_wrapper h1 {
+			#album_wrapper h1 {
 				font-size: 4em;
 				font-family: raleway-thin;
 				color: black;
@@ -134,56 +134,56 @@
 				margin: 0 auto;
 				margin-top: 50px;
 			}
-			.img_box img {
+			#img_box img {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
 			}
-			.text_box {
+			#text_box {
 				margin: 0 auto;
 				margin-top: 50px;
 				width: 700px;
 				font-size: 1em;
 			}
-			.text_box p {
+			#text_box p {
 				font-family: raleway-thin;
 				color: black;
 			}
-			.purchase_div {
+			#purchase_div {
 				height: 100px;
 				width: 70%;
 				margin: 0 auto;
 			}
 
-			.purchase_div h3 {
+			#purchase_div h3 {
 				font-size: 2.5em;
 				color: #990000;
 				font-family: raleway-thin;
 			}
-			.purchase_div ul {
+			#purchase_div ul {
 				margin-left: 10%;
 
 			}
-			.purchase_div ul li {
+			#purchase_div ul li {
 				float: left;
 				display: inline;
 				margin-right: 10%; 
 			}
-			.purchase_div ul li a {
+			#purchase_div ul li a {
 				color: #777777;
 				text-decoration: none;
 				font-size: 1.25em;
 			}
-			.purchase_div ul li:hover a {
+			#purchase_div ul li:hover a {
 				color: #990000;
 			}
-			.purchase_div ul li a img {
+			#purchase_div ul li a img {
 				margin-left: 20px;
 				-webkit-transition: -webkit-transform;
 				-webkit-transition-timing-function: ease-out;
 				-webkit-transition-duration: 200ms;
 			}
-			.purchase_div ul li:hover img {
+			#purchase_div ul li:hover img {
 				-webkit-transform: rotate(15deg);
 			}
 			#about {
@@ -198,7 +198,7 @@
 				font-size: 3.5em;
 				color: #000000;
 			}
-			.gallery {
+			#gallery {
 				position: absolute;
 				top: 2300px;
 				left: 0;
@@ -210,19 +210,19 @@
 				box-shadow: 0 0 50px rgba(0,0,0,1);
 				box-shadow: 0 0 -50px rgba(0,0,0,1);
 			}
-			.gallery img {
+			#gallery img {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
 			}
-			.slider {
+			#slider {
 				position: relative;
 				top: 150px;
 				width: 6000px;
 				height: 1000px;
 				z-index: 100;
 			}
-			.slider img {
+			#slider img {
 				display: block;
 				float: left;
 				height: 98%;
@@ -238,14 +238,11 @@
 				width: 20%;
 				background-color: rgba(51,51,51,0.5);
 			}
-			#about_rebekah_fixed h2 {
-				color: #cc3333;
-				font-size: 2.25em;
-			}
 			#about_rebekah_fixed p {
 				color: white;
 				padding-top: 25px;
-				font-size: 1.25em;
+				font-size: 1em;
+				line-height: 1.5em;
 			}
 			#contact {
 				background: url(../images/album_bg_red.jpg) no-repeat fixed;
@@ -259,7 +256,7 @@
 				font-family: raleway-thin;
 				padding-top: 4%;
 			}
-			.contact_wrapper {
+			#contact_wrapper {
 				position: absolute;
 				top: 8400px;
 				height: 1050px; 
@@ -267,52 +264,52 @@
 				background: #FFFFFF;
 				z-index: 50;
 			}
-			.contact_info {
+			#contact_info {
 				width: 50%;
 				height: 33%;
 				padding-top: 100px;
 				margin: 0 auto;
 			}
-			.contact_info li{
+			#contact_info li{
 				list-style: none;
 				display: inline;
 				padding-bottom: 50px;
 				float: left;
 			}
-			.contact_info h3 {
+			#contact_info h3 {
 				font-size: 2.5em;
 			}
-			.contact_info a {
+			#contact_info a {
 				font-size: 1.75em;
 				text-decoration: none;
 				color: #990000;
 				padding: 20px 20px;
 			}
-			.contact_info a:hover {
+			#contact_info a:hover {
 				text-decoration: underline;
 			}
-			.contact_soc_media {
+			#contact_soc_media {
 				width: 600px;
 				height: 10%;
 				margin: 0 auto;
 			}
-			.contact_soc_media li {
+			#contact_soc_media li {
 				display: inline;
 				float: left;
 				margin-left: auto;
 				margin-right: auto;
 			}
-			.contact_soc_media ul {
+			#contact_soc_media ul {
 				height: 100%;
 				width: 600px;
 				margin: 0 auto;
 			}
-			.contact_soc_media img {
+			#contact_soc_media img {
 				padding-top: 50px;
 				padding-right: 100px;
 				opacity: 0.6;
 			}
-			.contact_soc_media img:hover {
+			#contact_soc_media img:hover {
 				opacity: 1.0;
 			}
 
@@ -324,18 +321,18 @@
 				z-index: 93;
 				box-shadow: 0 0 50px rgba(0,0,0,1);
 			}
-			.roots_wrap {
+			#roots_wrap {
 				position: absolute;
 				top: 8250px;
 				z-index: 110;
 				width: 100%;
 			}
-			.tree_wrap {
+			#tree_wrap {
 				position: absolute;
 				top: 790px;
 				width: 40%;
 			}
-			.the_tree {
+			#the_tree {
 				display: block;
 				margin-left: auto;
 				margin-right: auto;

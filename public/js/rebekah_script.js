@@ -1,13 +1,31 @@
 $("document").ready(function() {
 
 	function init() {
+		$("#player").hide();
 		var scrollTop;
 		var imgPos;
 		var xPos;
 
+		// sets loading gif until images are loaded
+		$(window).load(function(){
+		    $('#loader').fadeOut(2000);
+		    return false;
+		}); // end load
+
 		$('body').click(function() {
 			alert($(window).scrollTop());
-		});
+			return false;
+		}); // end click
+
+		// hide divs that will be faded in and out later
+		$("#about_rebekah_fixed").hide();
+
+		// shows music player
+		$("#listen").click(function(event) {
+			event.preventDefault();
+			$("#player").toggle(200);
+			return false;
+		}); // end click
 
 		// set active nav function
 		$(function() {
@@ -35,42 +53,33 @@ $("document").ready(function() {
 					removeClass;
 					$("#nav_contain ul li a:eq(4)").addClass("active");
 				}
+
+				return false;
 			});
+			return false;
 		});
-
-		// sets loading gif until images are loaded
-		$(window).load(function(){
-		  $('#loader').fadeOut(3000);
-		}); // end load
-
-		// hide divs that will be faded in and out later
-		$(".player, #about_rebekah_fixed").hide();
-
-		// shows music player
-		$(".listen").click(function(event) {
-			event.preventDefault();
-			$(".player").toggle(200);
-		}); // end click
 
 		// resizes gallery when browser is adjusted
 		$(function() {
 			$(window).resize(function() {
 				scrollTop = $(window).scrollTop();
-				imgPos = -(($(window).width()/2) - ($(".slider img:first").width()/2));
+				imgPos = -(($(window).width()/2) - ($("#slider img:first").width()/2));
 				xPos = ((scrollTop - 7555) - imgPos);
 
 				// centers first gallery img, consequently making sure gallery scrolls smoothly through
 				// the process of sizing and resizing
-				$(".slider").css({'position' : 'relative', 'right' : imgPos + 'px'});
+				$("#slider").css({'position' : 'relative', 'right' : imgPos + 'px'});
 
 				// adjusts gallery if gallery scroll has begun
 				if (scrollTop >= 2300) {
-					$(".slider").css({'position' : 'fixed'});
-					$(".slider").css({
+					$("#slider").css({'position' : 'fixed'});
+					$("#slider").css({
 						'right': xPos +'px'
 					});
-				}		
+				}
+				return false;		
 			}); // end window resize
+			return false;
 		}); // end function
 
 		// activates animation for anchor nav tags
@@ -87,13 +96,14 @@ $("document").ready(function() {
 		        }
 		      }
 		    }); // end click
+		    return false;
 		}); // end function
 
 	    // function for gallery inititiation
 	    $(function() {
 			$(window).scroll(function() {
 				scrollTop = $(window).scrollTop();
-				imgPos = -(($(window).width()/2) - ($(".slider img:first").width()/2));
+				imgPos = -(($(window).width()/2) - ($("#slider img:first").width()/2));
 				xPos = ((scrollTop - 7555) - imgPos);
 
 				// fades about info in and out, before and after #about div
@@ -107,25 +117,28 @@ $("document").ready(function() {
 				// switches position to fixed, and then slides gallery left minus the img center
 				// and minus the scrolltop position in which the gallery scroll has begun.
 				if (scrollTop >= 2300 && scrollTop <= 7100) {
-					$(".slider").css({'position' : 'fixed'});
-					$(".slider").fadeIn(500);
-					$(".slider").css({
+					$("#slider").css({'position' : 'fixed'});
+					$("#slider").fadeIn(500);
+					$("#slider").css({
 						'right': xPos +'px'
 					});
 				}
 				// sets gallery to relative so it is visible before scroll
 				else if(scrollTop <= 2300) {
-					$(".slider").css({'position' : 'relative', 'right' : imgPos + 'px'});
+					$("#slider").css({'position' : 'relative', 'right' : imgPos + 'px'});
 				}
 				// fades gallery after scrolling past
 				else {
-					$(".slider").fadeOut(500);
+					$("#slider").fadeOut(500);
 				}
+				return false;
 			}); // end scroll
+			return false;
 		}); // end function
+		return false;
 	} // end init
 
 
-	// let's get this party started!
+	// Where did little suzy go during the bombing?  Everywhere.
 	init();
 }); // end document ready
