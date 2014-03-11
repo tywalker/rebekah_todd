@@ -109,9 +109,11 @@ $("document").ready(function() {
 				// fades about info in and out, before and after #about div
 				if (scrollTop >= 2250 && scrollTop <= 6700) {
 					$("#about_rebekah_fixed").fadeIn(500);
+                    $(".ab_reb").fadeIn(500);
 				}
 				else {
 					$("#about_rebekah_fixed").fadeOut(500);
+                    $(".ab_reb").fadeOut(500);
 				}
 
 				// switches position to fixed, and then slides gallery left minus the img center

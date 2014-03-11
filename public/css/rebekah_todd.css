@@ -136,12 +136,13 @@
 			}
 			#img_box img {
 				display: block;
+				padding: 50px;
 				margin-left: auto;
 				margin-right: auto;
 			}
 			#text_box {
 				margin: 0 auto;
-				margin-top: 50px;
+                margin-bottom: 25px;
 				width: 700px;
 				font-size: 1em;
 			}
@@ -156,7 +157,8 @@
 			}
 
 			#purchase_div h3 {
-				font-size: 2.5em;
+				font-size: 2em;
+                padding-bottom: 10px;
 				color: #990000;
 				font-family: raleway-thin;
 			}
@@ -167,7 +169,7 @@
 			#purchase_div ul li {
 				float: left;
 				display: inline;
-				margin-right: 10%; 
+				margin-right: 10%;
 			}
 			#purchase_div ul li a {
 				color: #777777;
@@ -178,6 +180,7 @@
 				color: #990000;
 			}
 			#purchase_div ul li a img {
+                margin-right:20px;
 				margin-left: 20px;
 				-webkit-transition: -webkit-transform;
 				-webkit-transition-timing-function: ease-out;
@@ -187,16 +190,18 @@
 				-webkit-transform: rotate(15deg);
 			}
 			#about {
-				background: url(../images/rebecca_bg.jpg) no-repeat fixed;
+				background: url(../images/rebecca_bg_alt.jpg) no-repeat fixed;
 				background-position: center;
 				background-size: cover;
 				height: 6200px; 
 				z-index: 0;
 			}
 			#about h1 {
-				padding-top: 7%;
-				font-size: 3.5em;
-				color: #000000;
+                padding-top: 3%;
+				font-size: 2.5em;
+                width: 75%;
+                margin: 0 auto;
+				color: white;
 			}
 			#gallery {
 				position: absolute;
@@ -229,18 +234,17 @@
 				margin-right: 3%;
 			}
 			#about_rebekah_fixed {
-				border-radius: 5px;
-				padding: 10px 40px 40px 40px;
+				padding: 10px 40px 15px 40px;
 				position: fixed;
-				top:300px;
-				left: 75px;
+				top:600px;
+				left: 30%;
 				z-index: 102;
-				width: 20%;
-				background-color: rgba(51,51,51,0.5);
+				width: 510px;
+				background-color: rgba(51,51,51,0.8);
 			}
 			#about_rebekah_fixed p {
 				color: white;
-				padding-top: 25px;
+				padding-top: 5px;
 				font-size: 1em;
 				line-height: 1.5em;
 			}
@@ -266,7 +270,7 @@
 			}
 			#contact_info {
 				width: 50%;
-				height: 33%;
+				height: 25%;
 				padding-top: 150px;
 				margin: 0 auto;
 			}
@@ -277,10 +281,10 @@
 				float: left;
 			}
 			#contact_info h3 {
-				font-size: 2.5em;
+				font-size: 1.25em;
 			}
 			#contact_info a {
-				font-size: 1.75em;
+				font-size:3em;
 				text-decoration: none;
 				color: #990000;
 				padding: 20px 20px;
@@ -305,9 +309,9 @@
 				margin: 0 auto;
 			}
 			#contact_soc_media img {
-				padding-top: 50px;
 				padding-right: 100px;
-				opacity: 0.6;
+				opacity: 0.3;
+                -webkit-transition: opacity 1s ease;
 			}
 			#contact_soc_media img:hover {
 				opacity: 1.0;
@@ -330,11 +334,22 @@
 			#tree_wrap {
 				position: absolute;
 				top: 790px;
-				width: 40%;
+				width: 100%;
 			}
 			#the_tree {
 				display: block;
-				margin-left: auto;
-				margin-right: auto;
+				margin: 0 auto;
 				z-index: 200;
+                opacity: 0.5;
+                -webkit-transition: opacity 1s ease;
+                
 			}
+            #the_tree:hover {
+                opacity: 1.0;     
+            }
+            .ab_reb {
+                position:fixed;
+                top: 65px;
+                left: 40%;
+                z-index:100;
+            }
