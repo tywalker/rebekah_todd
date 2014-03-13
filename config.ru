@@ -1,3 +1,6 @@
+require 'rack-canonical-host'
+
+use Rack::CanonicalHost, 'owlhouse-interactive.com'
 use Rack::Static,
   :urls => ["/images", "/js", "/css"],
   :root => "public"
